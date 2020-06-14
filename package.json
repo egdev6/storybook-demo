@@ -1,6 +1,6 @@
 {
   "name": "storybook-demo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -16,7 +16,9 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,11 +36,27 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.1.6",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-react-jsx": "^7.10.1",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-backgrounds": "^5.3.19",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.0.1",
+    "@storybook/react": "^5.3.19",
+    "@storybook/source-loader": "^5.3.19",
+    "@storybook/theming": "^5.3.19",
+    "babel-loader": "^8.1.0",
     "babel-plugin-root-import": "^6.5.0",
     "customize-cra": "^1.0.0",
     "customize-cra-react-refresh": "^1.1.0",
     "react-app-rewire-hot-loader": "^2.0.1",
-    "react-hot-loader": "^4.12.21"
+    "react-app-rewired": "^2.1.6",
+    "react-hot-loader": "^4.12.21",
+    "storybook-addon-themes": "^5.4.1"
   }
 }

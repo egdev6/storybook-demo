@@ -1,0 +1,18 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Avatar } from '../../components/'
+
+<Meta title="Avatar-MDX" component={Avatar} />
+
+# Avatar
+
+With `MDX` we can define a story for `Avatar` right in the middle of our
+markdown documentation.
+
+<Props of={Avatar} />
+
+<Preview>
+  <Story name="todos los temas">
+    <Avatar theme="default" />
+	<Avatar theme="light" />
+  </Story>
+</Preview>

@@ -7,16 +7,31 @@
 		font-family: 'Roboto';
 	}
 
-	#root > div:first-of-type > div:last-of-type" > div:first-of-type"{
+	#root > div:first-of-type > div:last-of-type > div:first-of-type{
 		border: 1px solid #24292E;
+	}
+
+	#root > div > div:last-child{
+		top:0 !important;
+	}
+
+	#root > div > div:last-child > div > div:last-child{
+		width:100%;
+		min-width: 400px;
 	}
 
 	.sidebar-header img{
 		background-color:#24292E;
+		height: 50px !important;
+		width:auto !important;
 	}
 
 	.sidebar-header button{
 		margin-top:5px;
+	}
+
+	.sidebar-expander{
+		border-left: 3.5px solid #ffffff !important;
 	}
 
 	#storybook-explorer-searchfield{
@@ -25,7 +40,23 @@
 		border-radius:4px;
 		color:#ffffff;
 	}
+
+	.simplebar-content > form > label > span{
+		color:#24292E !important;
+	}
+
+	.simplebar-content > pre{
+		background:#24292E !important;
+	}
+
+	.simplebar-content button{
+		color: #FFFFFF;
+	}
 	
+	.simplebar-content > div > div > div, .simplebar-content p, .simplebar-content ol, .simplebar-content h1, .simplebar-content h2{
+		color:#24292E !important;
+	}
+
 	.css-0 > form > svg{
 		fill: #ffffff;
 		left: 5px;
@@ -35,13 +66,11 @@
 		color:#ffffff;
 	}
 
-	.css-0 > section svg{
-		color:#D72323;
+	.css-0 > section svg, .simplebar-content a{
+		color:#01E7EC;
 	}
 
-	.sidebar-expander{
-		border-left: 3.5px solid #ffffff !important;
-	}
+
 
 	.selected > span{
 		color:#24292E;

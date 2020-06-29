@@ -1,8 +1,7 @@
 import { addParameters, addDecorator } from '@storybook/react';
 import { withConsole } from '@storybook/addon-console';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
-import myThemeDark from './Themes/myThemeDark';
-import myThemeLight from './Themes/myThemeLight';
+import CloudTheme from './Themes/CloudTheme';
 import '../src/assets/css/fonts.css';
 
 //Configuración de addons y storybook
@@ -10,8 +9,8 @@ addDecorator((storyFn, context) => withConsole()(storyFn)(context));
 
 addParameters({
   options: {
-    theme: myThemeLight,
-    panelPosition: 'bottom',
+    theme: CloudTheme,
+    panelPosition: 'right',
     isFullscreen: false,
   	showNav: true,
   	showPanel: true,

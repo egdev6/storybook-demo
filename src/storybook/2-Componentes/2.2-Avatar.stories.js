@@ -1,11 +1,12 @@
 import React from 'react';
 import { withKnobs, text, number, select, color, files } from "@storybook/addon-knobs";
 import { Avatar } from '../../components/'
+import { withA11y } from '@storybook/addon-a11y';
 
 export default {
-  title: 'Avatar',
+  title: 'Componentes|Avatar',
   component: Avatar,
-  decorators: [withKnobs],
+  decorators: [withKnobs, withA11y],
   parameters: {
   	componentSubtitle: 'Sub-label de componente',
     backgrounds: [

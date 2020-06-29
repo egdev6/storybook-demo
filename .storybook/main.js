@@ -18,6 +18,7 @@ addons: [
     '@storybook/addon-links/register',
     '@storybook/theming',
     '@storybook/addon-viewport/register',
-    '@storybook/addon-storysource'
+    '@storybook/addon-storysource',
+    '@storybook/addon-a11y/register'
   ],
 };
